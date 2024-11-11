@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Satvik Kannekanti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon Links -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts (Fira Code for coding style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      color: #e0e0e0;
+      background-color: #0d0f14;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .navbar {
+      background-color: transparent;
+      padding: 1rem;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #e0e0e0 !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff00c1 !important;
+    }
+    .content-section {
+      padding: 3rem;
+    }
+    .project-box {
+      background-color: #1a1c24;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .project-box:hover {
+      transform: scale(1.02);
+    }
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #00ff99;
+    }
+    .project-details {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+    .highlight {
+      color: #ff00c1;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #e0e0e0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Satvik Kannekanti</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="education.html">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="content-section">
+    <h1 class="text-center" style="color: #00ff99; font-size: 2.5rem;">Projects</h1>
+
+    <!-- Project Box 1 -->
+<div class="project-box">
+    <h3 class="project-title">BR(A)IN <span class="highlight">| React.js, Flask, PyTorch, OpenCV (CV2), YOLOv5</span></h3>
+    <ul class="project-details">
+      <li>Engineered a YOLOv5 model with RoboFlow annotations to detect 30 different arteries, surgical tools, and nerves in live brain surgeries, enhancing intraoperative precision for surgeons.</li>
+      <li>Orchestrated an interactive React.js front-end linked to a Flask backend via WebSocket, enabling a real-time video feed of 1,000+ surgical images and assisting surgeons in tracking critical objects during craniotomy.</li>
+      <li>Secured 5th place at Hack OH/IO for evolving surgical precision through live object detection in tumor surgeries.</li>
+    </ul>
+    <a href="https://github.com/lockedin12/repo1" target="_blank" class="btn btn-custom btn-github" style="margin-top: 1rem; display: inline-block; background-color: #00ff99; color: #0d0f14; padding: 0.5rem 1.5rem; border-radius: 20px; text-decoration: none; font-weight: 500;">View on GitHub</a>
+  </div>
+  
+
+    <!-- Project Box 2 -->
+    <div class="project-box">
+      <h3 class="project-title">PointStake <span class="highlight">| AWS S3, Swift, Express.js, RESTful API</span></h3>
+      <ul class="project-details">
+        <li>Developed a mobile application that enables users to share playlists, discover music, and podcasts through an extensive library of over 2,000 titles, enhancing community engagement and web development.</li>
+        <li>Designed a user-friendly interface using Swift and Flutter with a goal of achieving a 4/5 satisfaction rating.</li>
+      </ul>
+    </div>
+
+    <!-- Project Box 3 -->
+    <div class="project-box">
+      <h3 class="project-title">XML TO RSS FEED CONVERTER <span class="highlight">| XML, CSS, Java</span></h3>
+      <ul class="project-details">
+        <li>Constructed an XML to RSS feed converter, showcasing XML parsing and data transformation techniques.</li>
+        <li>Improved workflows by providing a streamlined and efficient process for generating RSS content, ensuring accuracy and enhancing the distribution of content.</li>
+        <li>Enhanced implementer efficiency with an AI-generated RSS feed (Feedly), reducing response times and improving access for over 1,000 news outlets.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Satvik Kannekanti. All rights reserved.</p>
+  </footer>  
+
+</body>
+</html>

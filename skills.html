@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #0d0f14;
+      color: #e0e0e0;
+      margin: 0;
+    }
+    
+    .skills-section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .skills-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    /* Skill Block Styling */
+    .skill-block {
+      background-color: #1c1f25;
+      color: #00ff99;
+      border-radius: 8px;
+      padding: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: transform 0.3s, background-color 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skill-block:hover {
+      background-color: #ff00c1;
+      color: #0d0f14;
+      transform: translateY(-10px);
+    }
+
+    /* Icon Styling */
+    .skill-icon {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Green R Styling */
+    .skill-icon.r-icon {
+      color: #00ff99; /* Green color matching the format */
+      font-weight: bold;
+    }
+    
+    /* Animation */
+    .skill-block {
+      animation: fadeInUp 0.8s ease-in-out both;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Favicon Link -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Alternative formats -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/favicon.png"> <!-- for Apple devices -->
+    <!-- Other styles and scripts -->
+  </head>
+  
+</head>
+<body>
+
+
+  <section class="skills-section">
+    <h1 class="skills-title">Skills</h1>
+    <div class="container">
+      <div class="row">
+        <!-- Programming Languages -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-python skill-icon"></i>
+            Python
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-java skill-icon"></i>
+            Java
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-js-square skill-icon"></i>
+            JavaScript
+          </div>
+        </div>
+        <!-- Green R for R language -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <span class="skill-icon r-icon">R</span>
+            R
+          </div>
+        </div>
+        <!-- SQL Skill Block -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fas fa-database skill-icon"></i>
+            SQL
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-html5 skill-icon"></i>
+            HTML/CSS
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fas fa-cogs skill-icon"></i>
+            C/C++
+          </div>
+        </div>
+
+        <!-- Libraries and Frameworks -->
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-react skill-icon"></i>
+            React.js
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fas fa-flask skill-icon"></i>
+            Flask
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+            <div class="skill-block">
+              <i class="fab fa-git-alt skill-icon"></i>
+              Git
+            </div>
+          </div>          
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fas fa-table skill-icon"></i>
+            Pandas
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="skill-block">
+            <i class="fab fa-node-js skill-icon"></i>
+            Node.js
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

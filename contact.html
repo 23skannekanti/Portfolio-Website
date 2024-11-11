@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Satvik Kannekanti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts (Fira Code for coding style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Fira Code', monospace;
+      color: #e0e0e0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* Particles Background */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #0d0f14;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: transparent;
+      padding: 1rem;
+    }
+    .navbar-brand {
+      color: #00ff99;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .navbar-nav .nav-link {
+      color: #e0e0e0 !important;
+      margin-right: 1.5rem;
+      font-weight: 500;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff00c1 !important;
+    }
+
+    /* Contact Section Styling */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: left;
+      padding: 20px;
+    }
+    .contact-container {
+      max-width: 600px;
+      background-color: #1a1d29;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .contact-title {
+      color: #00ff99;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .contact-description {
+      font-size: 1rem;
+      color: #b0b0b0;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #b0b0b0;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      background-color: #0d0f14;
+      border: 1px solid #333;
+      border-radius: 4px;
+      color: #e0e0e0;
+      font-family: 'Fira Code', monospace;
+    }
+    .btn-send-message {
+      background-image: linear-gradient(45deg, #ff00c1, #00ff99);
+      color: #0d0f14;
+      border: none;
+      border-radius: 30px;
+      padding: 0.8rem 2rem;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Satvik Kannekanti</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-title">Contact Me!</h2>
+      <p class="contact-description">
+        If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.
+      </p>
+      <form class="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+        
+        <button type="submit" class="btn-send-message">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#00ff99", "#ff00c1", "#ffffff"]
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.6
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+</body>
+</html>

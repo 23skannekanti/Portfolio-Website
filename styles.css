@@ -1,0 +1,177 @@
+/* Fullscreen background with gradient animation */
+body {
+    background: linear-gradient(-45deg, #ff0066, #6600ff, #00ccff, #ff9900);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Keyframe animation for background gradient */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-container {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-form input:hover, .contact-form textarea:hover {
+    border-color: #00ff99;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ff00c1;
+    box-shadow: 0 0 8px rgba(255, 0, 193, 0.5);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Gradient Animation for Send Message Button */
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-section {
+    background: linear-gradient(45deg, #ff00c1, #00ff99, #00c1ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .skills-section {
+    padding: 50px;
+    background-color: #1a1d29;
+  }
+  .skill {
+    margin-bottom: 20px;
+  }
+  .progress-bar {
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .progress {
+    background-color: #00ff99;
+    height: 20px;
+    border-radius: 20px;
+  }
+  /* styles.css */
+/* General Styling */
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #0d0f14;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: transparent;
+  padding: 1rem;
+}
+.navbar-brand {
+  color: #00ff99;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff00c1 !important;
+}
+
+/* Other styles go here, including skill section, animations, etc. */
+
+  
+
+.btn-send-message {
+  background: linear-gradient(45deg, #ff00c1, #00ff99, #00c1ff);
+  background-size: 200% 200%;
+  animation: gradientBackground 3s ease infinite;
+}
+
+  
+
+/* Centered header text with animation */
+header.jumbotron {
+    background: transparent;
+    color: white;
+}
+
+header.jumbotron h1 {
+    color: #ff66ff;
+}
+
+header.jumbotron p {
+    color: #00ffcc;
+}
+
+/* Styling for Contact Section */
+section#contact {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* Header Styling */
+.navbar {
+    background-color: #0d0f14; /* Dark background */
+    color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 1.5rem;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ff00c1; /* Optional hover color */
+  }
+  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+  

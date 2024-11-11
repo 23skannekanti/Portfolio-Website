@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Satvik Kannekanti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon Links -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- .ico format for best compatibility -->
+
+  <!-- Google Fonts (Fira Code for coding style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Fira Code', monospace;
+      color: #e0e0e0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .btn-custom {
+      border-radius: 30px;
+      padding: 0.8rem 2rem;
+      font-weight: 500;
+      margin: 0.5rem;
+      display: inline-block;
+      font-size: 1rem;
+    }
+    .btn-resume {
+      background-image: linear-gradient(45deg, #ff00c1, #00ff99);
+      color: #0d0f14;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Particles Background */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #0d0f14;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: transparent;
+      padding: 1rem;
+    }
+    .navbar-brand {
+      color: #00ff99;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .navbar-nav .nav-link {
+      color: #e0e0e0 !important;
+      margin-right: 1.5rem;
+      font-weight: 500;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff00c1 !important;
+    }
+
+    /* Header Section Styling */
+    .header-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+    .header-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .header-text h1 span {
+      color: #00ff99;
+    }
+    .header-text h1 .highlight-pink {
+      color: #ff00c1;
+    }
+
+    /* Reduce gap between header text and buttons */
+    .button-container {
+      margin-top: -2rem; /* Adjusted from .mt-4 */
+    }
+
+    /* Buttons */
+    .btn-custom {
+      border-radius: 30px;
+      padding: 0.8rem 2rem;
+      font-weight: 500;
+      margin: 0.5rem;
+      display: inline-block;
+      font-size: 1rem;
+    }
+    .btn-contact {
+      background-color: transparent;
+      color: #e0e0e0;
+      border: 1px solid #e0e0e0;
+    }
+    .btn-contact:hover {
+      background-color: #00ff99;
+      color: #0d0f14;
+      border: none;
+    }
+    .btn-resume {
+      background-image: linear-gradient(45deg, #ff00c1, #00ff99);
+      color: #0d0f14;
+      border: none;
+    }
+    .btn-resume:hover {
+      opacity: 0.9;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      color: #e0e0e0;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Satvik Kannekanti</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <a class="nav-link" href="education.html">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Header Section -->
+  <section class="header-section">
+    <div class="header-text">
+      <h1>Welcome!<br> My name is <span class="highlight-pink">Satvik Kannekanti</span></h1>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="mt-4">
+      <a href="contact.html" class="btn btn-custom btn-contact">Contact Me</a>
+      <a href="javascript:void(0);" class="btn btn-custom btn-resume" onclick="openResume()">Get Resume</a>
+    </div>
+  </section>
+
+  <!-- JavaScript for Opening Resume in a New Tab -->
+  <script>
+    function openResume() {
+      window.open('/Users/skannekanti/Downloads/Satvik Resume Jake.pdf', '_blank');
+    }
+  </script>
+
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#00ff99", "#ff00c1", "#ffffff"]
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.6
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+  <footer class="footer">
+    <p>&copy; 2024 Satvik Kannekanti. All rights reserved.</p>
+  </footer>  
+</body>
+</html>
